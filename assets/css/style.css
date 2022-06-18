@@ -1,0 +1,334 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+p {
+    margin: 0;
+}
+ul, ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+a, a:hover {
+    text-decoration: none;
+    color: #000;
+}
+img {
+    vertical-align: middle;
+}
+:root {
+    --primary_color: #0771b9;
+    --secondary_color: #5bc5f3;
+}
+.head_divider {
+    column-gap: 5px;
+}
+.divider_1 {
+    width: 47px;
+    height: 1px;
+    background: var(--primary_color);
+}
+.divider_2 {
+    width: 3px;
+    height: 1px;
+    background: var(--primary_color);
+}
+.divider_3 {
+    width: 2px;
+    height: 1px;
+    background: var(--primary_color);
+}
+.divider_4 {
+    width: 1px;
+    height: 1px;
+    background: var(--primary_color);
+}
+/* Common CSS End */
+
+/* Back To Top Start */
+.back_to_top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1;
+    display: none;
+}
+/* Back To Top End */
+
+/* Welcome Part Start */
+.welcome_part {
+    background: var(--primary_color);
+}
+.welcome_icon li a {
+    color: #fff;
+    padding: 8px 10px;
+    display: block;
+    transition: .3s;
+}
+.welcome_icon li a:hover {
+    color: #353535;
+}
+/* Welcome Part End */
+
+/* Navigation Part Start */
+.navigation_part {
+    position: sticky !important;
+    top: 0;
+    background: rgba(255,255,255,.7);
+}
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: var(--primary_color);
+}
+.bg {
+    background: #fff;
+    transition: all .5s;
+    box-shadow: 0 0 10px -8px black;
+    z-index: 9;
+}
+/* Navigation Part End */
+
+/* Hero Part Start */
+.hero_part {
+    background: url(./../img/hero_bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.hero_part .overlay {
+    padding: 85px 0;
+    background: rgba(0,0,0,0.5);
+}
+
+.hero_con h1 {
+    font-size: 56px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+.hero_con h1:nth-child(2) {
+    font-weight: 700;
+}
+.hero_con p {
+    font-size: 18px;
+    padding: 20px 0;
+    line-height: 1.7;
+}
+.hero_btn a {
+    background: var(--primary_color);
+    border-radius: 0;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    border: 2px solid transparent;
+    transition: .4s;
+}
+.hero_btn a:hover {
+    background: transparent;
+    border: 2px solid #fff;
+}
+/* Hero Part End */
+
+/* About Part Start */
+.about_part {
+    padding-top: 60px;
+}
+.about_head {
+    padding-bottom: 35px;
+}
+.about_head h2 {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.about_con p {
+    font-size: 18px;
+    color: #555;
+    padding: 5px 0;
+}
+/* About Part End */
+
+/* Service Part Start */
+.service_con {
+    background: #f1f1f1;
+    padding: 50px 15px 20px;
+    position: relative;
+    transition: .4s;
+    margin: 30px 0 0;
+}
+.service_con h4 {
+    text-transform: uppercase;
+}
+.service_icon {
+    width: 82px;
+    height: 82px;
+    background: #f1f1f1;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px #f1f1f1, 0 0 0 7px #fff;
+    position: absolute;
+    top: -45px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.4s;
+}
+.service_con:hover .service_icon{
+    background: var(--secondary_color);
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px var(--secondary_color), 0 0 0 7px #fff;
+}
+.service_con:hover {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+/* Service Part End */
+
+/* Portfolio Part Start */
+.port_img {
+    position: relative;
+    overflow: hidden;
+}
+.port_overlay {
+    height: 100%;
+    width: 0%;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+}
+.port_img:hover .port_overlay {
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
+}
+.port_overlay a {
+    height: 40px;
+    width: 40px;
+    background: var(--secondary_color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #fff;
+}
+/* Portfolio Part End */
+
+/* Team Part Start */
+.team_img {
+    position: relative;
+    overflow: hidden;
+    transition: 0.4s;
+}
+.team_img:hover {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.team_img_overlay {
+    height: 100%;
+    width: 0;
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+}
+.team_img:hover .team_img_overlay {
+    opacity: 1;
+    visibility: visible;
+    width: 33.33%;
+}
+.team_img_overlay ul li a {
+    display: block;
+    height: 40px;
+    width: 40px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin: 5px 0;
+    line-height: 40px;
+    color: #fff;
+    transition: .4s;
+}
+.team_img_overlay ul li a:hover {
+    background: var(--secondary_color);
+    border: 1px solid var(--secondary_color);
+}
+.team_con h4 {
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-top: 10px;
+    transition: 0.4s;
+}
+.team_img:hover ~ h4 {
+    color: var(--secondary_color);
+}
+/* Team Part End */
+
+/* Testimonial Part Start */
+.testi_con {
+    padding: 20px;
+    background: #f1f1f1;
+    position: relative;
+    margin-top: 35px;
+}
+.testi_con::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    width: 45px;
+    height: 45px;
+    background: #f1f1f1;
+    transform: translateX(-50%) rotate(45deg);
+    z-index: -1;
+}
+.testi_con h4 {
+    text-transform: uppercase;
+}
+.testi_con p {
+    font-family: 'oswald';
+    font-size: 18px;
+}
+.testi_con ul li {
+    color: var(--secondary_color);
+}
+
+/* Testimonial Part End */
+
+/* Contact Part Start */
+.contact_part {
+    background: #353535;
+}
+.contact_icon {
+    height: 45px;
+    width: 45px;
+    background: var(--secondary_color);
+    border-radius: 50%;
+}
+.import_link_main ul li a {
+    display: block;
+    padding: 5px 0;
+    color: #fff;
+    transition: 0.4s;
+}
+.import_link_main ul li a:hover {
+    color: var(--secondary_color)
+}
+.footer {
+    background: #555;
+    padding: 15px 0;
+}
+.footer a {
+    color: var(--secondary_color);
+}
+/* Contact Part End */

@@ -1,0 +1,11 @@
+1= Perticle JS-
+2= Back To Top
+3= addClass/removeClass
+4= Venobox
+5= CountDown
+6= Counter UP-
+7= OWL/Swiper/Slick Slider
+8= Anime JS
+9= WOW JS
+10= Type JS
+11= Mixitup-
